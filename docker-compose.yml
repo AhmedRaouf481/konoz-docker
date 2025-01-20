@@ -1,6 +1,7 @@
 services:
   konoz-backend-v2:
     image: araouf/konoz-backend:latest # Replace with your Docker Hub image
+    platform: linux/amd64
     ports:
       - "4000:4000" # Map container port to host port
     env_file:
